@@ -1,0 +1,1 @@
+// tupple : tupple function is used in array

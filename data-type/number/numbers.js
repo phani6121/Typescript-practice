@@ -29,3 +29,15 @@ var $variable = 345;
 // initialBill=clutchkit+brakepads
 // console.log("intiabill",initialBill);
 // console.log("finalbill",initialBill+flywheel);
+var pulser = 70000;
+var duke = 90000;
+var enfeld = 100000;
+pulser = 60000;
+duke = 80000;
+enfeld = 90000;
+console.log("total price- ", pulser + duke + enfeld);
+var tvs = 30000;
+var honda = 50000;
+var hero = 40000;
+console.log("total prices- ", tvs + honda * hero);
+console.log("total prices- ", tvs * honda + hero);

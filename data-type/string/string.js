@@ -10,3 +10,9 @@ function addAdaka(name) {
 console.log(addAdaka("sriman"));
 console.log(addAdaka("siva"));
 console.log(addAdaka("nagaraju"));
+var aboutCompany = "good";
+console.log(aboutCompany);
+var sivaIs = "good boy";
+console.log(sivaIs);
+var greeting = "welcome home";
+console.log(greeting);

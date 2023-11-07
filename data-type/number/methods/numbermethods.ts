@@ -24,3 +24,8 @@ given to consider after point only out put given only taken that two numbers */
 
 console.log(Number.parseFloat(toFixedValue) + 20); //220.34
 
+let amount: string='123.345';
+console.log(amount+20);
+
+
+

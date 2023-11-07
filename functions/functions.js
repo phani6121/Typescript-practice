@@ -1,6 +1,6 @@
 //function : it is used to create a logic with the help of that logic we can perform paticular task many times 
 function nameOfFunction() {
-    //function body
+    //function body or block 
 }
 //nameOfFunction()                   // function calling 
 function multi(a, b) {
@@ -18,7 +18,7 @@ addition(2, 3, 4);
 function additionWithThree(a, b, c) {
     if (a === void 0) { a = 2; }
     if (b === void 0) { b = 3; }
-    if (c === void 0) { c = 2; }
+    if (c === void 0) { c = "two"; }
     console.log(c);
     console.log(a + b + c);
     console.log(a + b + c + substraction());

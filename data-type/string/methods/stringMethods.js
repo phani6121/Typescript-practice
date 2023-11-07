@@ -21,4 +21,16 @@ console.log(names.split(" ", 2));
 console.log(names.split(" ", 1));
 //substring : it is the sparate the string of some porsition 
 var strr = "sivanagaraju";
-// console.log(strr(substring))
+console.log(strr.substring(0, 3));
+console.log(strr.substring(3, 7));
+//Uppercase method: It is the change to string small letter to caital letters 
+var str5 = "nidamanuri phanindar kumar";
+console.log(str5.toUpperCase());
+//lowercase method:It is the change to string caital letters to capital letters 
+var str6 = "NIDAMANURI PHANINDRA KUMAR";
+console.log(str6.toLocaleLowerCase());
+// Trim method: In this method to trim the free space of right and left of the string 
+var str7 = '     welcome     ';
+console.log(str7.trim());
+console.log(str7.trimStart());
+console.log(str7.trimEnd());

@@ -1,7 +1,7 @@
 //function : it is used to create a logic with the help of that logic we can perform paticular task many times 
 
 function nameOfFunction() {
-    //function body
+    //function body or block 
 }
 
 //nameOfFunction()                   // function calling 
@@ -24,7 +24,7 @@ addition(2, 3, 4)
 // addition(1,0)
 
 
-function additionWithThree(a: number = 2, b: number = 3, c: number = 2) { // defolt perameter value 
+function additionWithThree(a: number = 2, b: number = 3, c: string = "two") { // defolt perameter value 
     console.log(c);
     console.log(a + b + c);
     console.log(a + b + c + substraction());
@@ -34,7 +34,8 @@ additionWithThree()
 // function with return 
 
 function substraction(x: number = 7, y: number = 5) {
-    return x - y;
+    const result:number = x - y;
+    return result;
 }
 
 

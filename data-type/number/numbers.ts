@@ -30,7 +30,7 @@ steelbird = 900
 studds = 800
 
 
- console.log('total amount-', studds + steelbird + vega)
+console.log('total amount-', studds + steelbird + vega)
 
 let $variable: number = 345;
 
@@ -44,6 +44,31 @@ let $variable: number = 345;
 // console.log("intiabill",initialBill);
 
 // console.log("finalbill",initialBill+flywheel);
+
+let pulser: number = 70000;
+let duke: number = 90000;
+let enfeld: number = 100000;
+
+pulser = 60000
+duke = 80000
+enfeld = 90000
+
+console.log("total price- ", pulser + duke + enfeld);
+
+let tvs: number = 30000
+let honda: number = 50000
+let hero: number = 40000
+
+console.log("total prices- ", tvs + honda *hero );
+console.log("total prices- ", tvs * honda + hero );
+
+
+
+
+
+
+
+
 
 
 
