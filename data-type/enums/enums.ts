@@ -1,4 +1,4 @@
-// Enums: It is the constant variable value and it can create numeric and string 
+// Enums: It is the constant key word of variable value and it can create numeric and string 
 
 enum fruitPrice {
     applePrice,   //Here item one price taken 0 and item two price 1
