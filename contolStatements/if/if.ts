@@ -55,3 +55,17 @@ if (numberType % 2 == 1) {
 } else {
     console.log("even number");
 }
+/*True values:
+Numbers ==> -1 to -ve infinity and 1 to +ve infinity.
+String ==> If array length is gretherthen 0 it considerd as true, or [].
+Object ==> If object kay length is greterthen 0 it consider as true or {}.
+Boolean ==> true.
+
+falsy values:
+Numbers ==> 0.
+String ==> If there is no text in string that is false ex: "" or ''.
+Array ==> If array length is equai to 0 it considerd as false , or [].length ==0.
+Object ==> If object key length is equal to 0 it considerd as false or object.keys ({}).length==0
+Boolean ==> False
+Undefind , null
+*/

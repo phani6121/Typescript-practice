@@ -1,3 +1,13 @@
 or || 
 and &&
-not !
+not ! 
+==--> It checks value on both sides
+===--> It checks dataType on both sides
+
+something/something will give you quotient
+something%something will give you reminder 
+% modular operator or modulus or persentage sign
+
+
+
+

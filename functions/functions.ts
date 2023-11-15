@@ -61,3 +61,4 @@ function valueIncrement(value: number) {
 
 console.log("function return count", valueIncrement(0));
 console.log("outside count", count);
+
