@@ -101,12 +101,60 @@ var bike = [
         brand: "honda"
     }
 ];
-// let result = bike.push({
-//     model: "dream",
-//     cc: 121,
-//     brand: "honda"
-// })
-// console.log(bike);
-// let result1 = bike.pop()
-// console.log(bike);
-var result2 = bike.shift();
+var result = bike.push({
+    model: "dream",
+    cc: 121,
+    brand: "honda"
+});
+console.log(bike);
+var result1 = bike.pop();
+console.log(bike);
+// map method 
+// This method is create given the new array and also 
+var bikeForMap = [
+    {
+        model: "shine",
+        cc: 125,
+        brand: "honda"
+    },
+    {
+        model: "activa",
+        cc: 110,
+        brand: "honda"
+    }
+];
+console.log("bikeForMap", bikeForMap);
+var mapDataStore = bikeForMap.map(function (bikeInfo, index) {
+    bikeInfo.cc = 123456;
+    return {
+        model1: bikeInfo.model,
+        cc1: bikeInfo.cc,
+        brand1: bikeInfo.brand
+    };
+});
+console.log("mapDataStore", mapDataStore);
+console.log("bikeForMap", bikeForMap);
+var bikeForFilter = [
+    {
+        model: "shine",
+        cc: 10,
+        brand: "honda"
+    },
+    {
+        model: "activa",
+        cc: 9,
+        brand: "honda"
+    }
+];
+var mapDataStoreFroFikter = bikeForFilter.map(function (bikeInfo, index) {
+    if (bikeInfo.cc < 10) {
+        return bikeInfo.cc;
+    }
+}).filter(function (item, index) { return item != undefined; });
+// fliter method is based on condtion to given new array
+console.log("mapDataStoreFroFikter", mapDataStoreFroFikter);
+var object = {
+    id: 1,
+    name: "sri",
+    age: 25
+};

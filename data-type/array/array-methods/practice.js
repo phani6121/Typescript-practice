@@ -24,11 +24,11 @@ bike1.forEach(function (companyName, indexValue) {
     }
     companyName["number of pistons"] = 1; //this is add key in object
     delete companyName.brand; // delete key of the object in that time key must be optional
-    if (companyName.model == "activa") {
+    if (companyName.model == "activa") { // this is add key paticular object
         companyName["speed"] = 180;
     }
     if (companyName.model == "activa") {
-        companyName["cubic centemeter"] = companyName["cc"];
+        companyName["cubic centemeter"] = companyName["cc"]; //this is replace key particular object
         delete companyName.cc;
     }
 });
