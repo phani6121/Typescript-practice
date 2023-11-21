@@ -41,7 +41,7 @@ anotherObject.age = 12;
 anotherObject.insideObject.color = "red";
 
 console.log("object", object);
-console.log("anotherObject", anotherObject);
+console.log("anotherObject", anotherObject);// deep clone referance was canceled
 /*Deep clone is applyes create a new array ,object and function there is no changes */
 //let anotherObjectForDeepClone: Object = JSON.parse(JSON.stringify(object));other type of call in deep clone 
 let anotherObjectForDeepClone: Object = structuredClone(object); //an other type of call in deep clone 

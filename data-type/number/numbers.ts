@@ -59,9 +59,13 @@ let tvs: number = 30000
 let honda: number = 50000
 let hero: number = 40000
 
-console.log("total prices- ", tvs + honda *hero );
-console.log("total prices- ", tvs * honda + hero );
+console.log("total prices- ", tvs + honda * hero);
+console.log("total prices- ", tvs * honda + hero);
 
+
+const number: number = 88;
+
+number = 765
 
 
 
