@@ -1,4 +1,5 @@
 var _a;
+;
 var ExampleObj = {
     id: 1,
     name: "sriman",
@@ -120,11 +121,11 @@ animals.duck = 1;
 console.log(animals);
 delete animals.dog;
 console.log(animals);
-var object1 = {
-    property1: 42,
+//sealed method 
+// In this method object is sealed output true ,not sealed output false
+var viscocity = {
+    property: 42,
 };
-console.log(Object.isSealed(object1));
-// Expected output: false
-Object.seal(object1);
-console.log(Object.isSealed(object1));
-// Expected output: true
+console.log(Object.isSealed(viscocity));
+Object.seal(viscocity);
+console.log(Object.isSealed(viscocity));

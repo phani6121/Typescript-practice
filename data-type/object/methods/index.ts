@@ -5,7 +5,7 @@ interface Object_type {
     age: number,
     sur_name: string;
     nested_obj: any;
-}
+};
 
 const ExampleObj: Object_type = {
     id: 1,
@@ -50,7 +50,7 @@ values*/
 
 //assign method
 /*In this method one or more objects are there in that time if we call first object it will
-add remining objects and if objects keys are same the value takenend of the object 
+add remining objects
 
 If we call second or third object output is only that object keys and values */
 
