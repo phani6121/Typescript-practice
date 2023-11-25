@@ -1,4 +1,4 @@
-// tupple : tupple function is used in arrays and to wrote given datatype for elements 
+// tuple : tupple function is used in arrays and to wrote given datatype for elements 
 
 let use : [string, number, boolean]
 

@@ -1,6 +1,7 @@
 for (let i = 1; i <= 10; i++) { //sintax for (instalization; condition ; incrementation )
-    console.log(`hello ${i}`); //string litlers
-}
+    console.log("hello" + i);
+    console.log(`hello ${i}`); //string litlers 
+};
 for (let x = 10; x >= 1; x--) {
     console.log(x);
 }
@@ -27,4 +28,8 @@ for (let j = 0; j <= 1000; j++) {// break is break the loop if condition true
         continue; // continue is bypass the loop
     }
     console.log(j);
+}
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
 }

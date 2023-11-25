@@ -96,8 +96,8 @@ const car1 = {
     steering: 1,
     driver: 1
 };
-console.log(Object.hasOwn(car1, "wheels"));//This is object key so true 
-console.log(Object.hasOwn(car1, "tyres"));// This is not object key so false(not defind)
+// console.log(Object.hasOwn(car1, "wheels"));//This is object key so true 
+// console.log(Object.hasOwn(car1, "tyres"));// This is not object key so false(not defind)
 
 //is method 
 // In this method object keys values are same output is true values are different output false
@@ -146,7 +146,7 @@ const materials = {
 console.log(Object.values(materials));
 
 //seal method
-//In this method object keys are not possiable to change ,delete and add.
+//In this method object keys are not possiable to change ,delete and add once seal
 // Its possiable to change the values 
 
 interface animalsType {

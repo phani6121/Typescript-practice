@@ -1,5 +1,5 @@
 let nagaraju: string = "handsome" // If, Else if and Else those three are control statements
-if (nagaraju) {     //At here i am using IF statement. In this statement to change the given input to output in feture
+if (nagaraju) {//At here i am using IF statement. In this statement to change the given input to output in feture
     console.log("notHandsome");
 }
 
@@ -7,9 +7,9 @@ let myNumber: number = 34
 if (myNumber > 35) {
     console.log("pass");
 } else {
-    console.log("fail");
+    console.log("fail"); 
+};
 
-}
 let temparature: number = 19
 if (temparature > 35) {
     console.log("it's a hot Day");
@@ -32,7 +32,7 @@ if (marks <= 100 && marks >= 90) {
     console.log("F");
 } else if (marks > 100) {
     console.log("INVALID MARKS");
-}
+};
 
 let grades: number = 1245
 if (grades <= 100 && grades >= 90) {

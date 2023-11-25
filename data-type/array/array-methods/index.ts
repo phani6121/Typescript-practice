@@ -39,6 +39,9 @@ school.forEach((schoolClass, indexValue) => {// In foreach method first veriable
     console.log("inside count", count);
 })
 console.log("outside count", count);
+ array.forEach(element => {
+    
+ });
 
 
 school.forEach(function (schoolClass, indexValue) { //forEach method has by defolt two variables is there
@@ -86,8 +89,9 @@ console.log("school", school);
 const latters1: string[] = ['a', 'b', 'c'];
 const latters2: string[] = ['d', 'e', 'f'];
 const latters3 = latters1.concat(latters2);
-
 console.log(latters3);
+
+// slice method
 
 const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 

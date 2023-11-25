@@ -13,6 +13,8 @@ or string or any data type only change that value only and paticular place only 
 // console.log("copyNumber", copyNumber);
 
 
+
+
 //non - primitive Data types
 
 interface Object { //Non premitive types are called objects ,arrays and functions (data types)

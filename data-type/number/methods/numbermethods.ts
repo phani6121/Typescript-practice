@@ -1,6 +1,6 @@
 // number methods 
 
-let num: string = "200.34567";
+let num: string = "200.23567"
 
 console.log(num + 20); // 20020
 

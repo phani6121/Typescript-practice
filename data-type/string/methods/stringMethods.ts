@@ -1,7 +1,7 @@
 // charAt
 
 var mystring: string = 'welcome to typescript';
-console.log(mystring.charAt(4));
+console.log(mystring.charAt(1));
 
 let mystrings: string = 'welcome home';
 console.log(mystring.charAt(8));
@@ -20,7 +20,7 @@ console.log(str1.concat(str2).concat(str3));
 // replace 
 
 var str: string = "flywheel";
-console.log(str.replace('y', 'x'));
+console.log(str.replace('x', 'y'));
 console.log(str.replace('fly', 'allow'));
 
 //split : it method has to split he string multipile strings
@@ -30,7 +30,7 @@ console.log(names.split(" "));
 console.log(names.split(" ", 2));
 console.log(names.split(" ", 1));
 
-//substring : it is the sparate the string of some porsition 
+//substring : it is the sparate the string of some position 
 
 let strr: string = "sivanagaraju";
 console.log(strr.substring(0, 3));

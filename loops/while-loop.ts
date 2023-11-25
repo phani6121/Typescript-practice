@@ -5,7 +5,7 @@ while (milk <= 30) {//milk<=30 it is condition for while loop
     console.log(milk);
     console.log((`day-->${milk}`));
     milk += 1;//increment of initialvalue
-}
+};
 console.log(milkValue);
 
 let studentStart = 1;
@@ -17,7 +17,11 @@ while (studentStart <= 40) {
         price = price + 40000
     }
     studentStart += 1;
-}
+};
 console.log(price);
+while (condition) {
+    
+}
+
 
 

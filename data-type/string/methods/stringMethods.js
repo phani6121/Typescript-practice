@@ -1,6 +1,6 @@
 // charAt
 var mystring = 'welcome to typescript';
-console.log(mystring.charAt(4));
+console.log(mystring.charAt(1));
 var mystrings = 'welcome home';
 console.log(mystring.charAt(8));
 var mystring = "type script";
@@ -12,14 +12,14 @@ var str3 = " and sri";
 console.log(str1.concat(str2).concat(str3));
 // replace 
 var str = "flywheel";
-console.log(str.replace('y', 'x'));
+console.log(str.replace('x', 'y'));
 console.log(str.replace('fly', 'allow'));
 //split : it method has to split he string multipile strings
 var names = "siva naga phani";
 console.log(names.split(" "));
 console.log(names.split(" ", 2));
 console.log(names.split(" ", 1));
-//substring : it is the sparate the string of some porsition 
+//substring : it is the sparate the string of some position 
 var strr = "sivanagaraju";
 console.log(strr.substring(0, 3));
 console.log(strr.substring(3, 7));

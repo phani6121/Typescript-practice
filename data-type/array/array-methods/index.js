@@ -33,6 +33,8 @@ school.forEach(function (schoolClass, indexValue) {
     console.log("inside count", count);
 });
 console.log("outside count", count);
+array.forEach(function (element) {
+});
 school.forEach(function (schoolClass, indexValue) {
     console.log("schoolClass", schoolClass);
     console.log("indexValue", indexValue);
@@ -89,6 +91,7 @@ var square_numbers = numbers.map(square);
 console.log(square_numbers);
 // At method 
 var array1 = [5, 12, 8, 130, 44];
+console.log(array1.at(3));
 var bike = [
     {
         model: "shine",
@@ -153,8 +156,117 @@ var mapDataStoreFroFikter = bikeForFilter.map(function (bikeInfo, index) {
 }).filter(function (item, index) { return item != undefined; });
 // fliter method is based on condtion to given new array
 console.log("mapDataStoreFroFikter", mapDataStoreFroFikter);
-var object = {
-    id: 1,
-    name: "sri",
-    age: 25
-};
+// interface schoolType {
+//     id: number,
+//     class: string,
+//     count?: number
+// };
+// let school: schoolType[] = [
+//     {
+//         id: 2,
+//         class: "6th class",
+//         count: 30
+//     },
+//     {
+//         id: 1,
+//         class: "7th class",
+//         count: 40
+//     },
+//     {
+//         id: 3,
+//         class: "8th class",
+//         count: 50
+//     },
+//     {
+//         id: 4,
+//         class: "9th class",
+//         count: 60
+//     },
+//     {
+//         id: 5,
+//         class: "10th class",
+//         count: 50
+//     },
+//     {
+//         id: 6,
+//         class: "11th class",
+//         count: 40
+//     },
+//     {
+//         id: 7,
+//         class: "12th class",
+//         count: 40
+//     },
+//     {
+//         id: 8,
+//         class: "13th class",
+//         count: 30
+//     },
+//     {
+//         id: 9,
+//         class: "14th class",
+//         count: 30
+//     },
+//     {
+//         id: 10,
+//         class: "15th class",
+//         count: 20
+//     },
+//     {
+//         id: 11,
+//         class: "16th class",
+//         count: 10
+//     },
+//     {
+//         id: 12,
+//         class: "17th class",
+//         count: 20
+//     },
+//     {
+//         id: 13,
+//         class: "18th class",
+//         count: 30
+//     },
+//     {
+//         id: 14,
+//         class: "19th class",
+//         count: 40
+//     },
+//     {
+//         id: 15,
+//         class: "20th class",
+//         count: 30
+//     }
+// ];
+// let count: number = 0;
+// school.forEach((schoolClass, indexValue) => {
+//     count += indexValue;
+//     console.log("schoolClass", schoolClass);
+//     console.log("indexValue", indexValue);
+//     console.log("inside count", count)
+// });
+// console.log("outside count", count);
+// school.forEach(function (schoolClass, indexValue) {
+//     console.log("schoolClass", schoolClass);
+//     console.log("indexValue", indexValue);
+// });
+// school.forEach((schoolClass, indexValue) => {
+//     console.log("schoolClass", schoolClass["class"]);
+//     console.log("schoolClass", schoolClass.class);
+//     console.log("schoolClass", schoolClass.id);
+//     console.log("schoolClass", schoolClass.count);
+//     console.log("indexValue", indexValue);
+//     console.log(schoolClass.class);
+//     if (schoolClass.id == 1) {
+//         schoolClass.count = 55;
+//     }
+//     schoolClass["no of periods"] = 7;
+//     delete schoolClass.count;
+//     return schoolClass;
+// });
+// console.log("school", school);
+// const latters1: string[] = ["a", "b", "c"];
+// const latters2: string[] = ["d", "e", "f"];
+// const latters3 = latters1.concat(latters2);
+// console.log(latters3);
+// const animals=["ant","bison",]

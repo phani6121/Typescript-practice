@@ -1,5 +1,3 @@
-
-
 let initialvalue: number = 0
 do {
     console.log(initialvalue);

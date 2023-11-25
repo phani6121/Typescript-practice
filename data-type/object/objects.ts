@@ -19,7 +19,7 @@ let book = {
 }
 
 function bookInfo(book: bookType) {
-    // console.log();
+    console.log();
 }
 
 bookInfo(book);
@@ -30,27 +30,27 @@ book.chapters = 12;
 
 
 
-interface objectTpe {
+
+interface objectType {
     objKey: number;
     objKey_2: number;
 
 }
 
-function object(objejData: objectTpe): objectTpe { //Here retun object is wrote at before block at index line
+function object(objejData: objectType): objectType { //Here retun object is wrote at before block at index line
 
-    const innerFunctionObject: objectTpe = objejData;
+    const innerFunctionObject: objectType = objejData;
 
-    return innerFunctionObject;
+    return objejData
 
 }
 
-let obj = {
-    objKey: 1,
-    objKey_2: 2
+const onj = {
+    objKey: 23,
+    objKey_2: 66
 }
 
-
-object(obj);
+object(onj);
 
 
 
@@ -96,9 +96,6 @@ let obj = {
 }
 
 console.log(obj.ffoo, obj.prop);
-
-
-
 
 
 

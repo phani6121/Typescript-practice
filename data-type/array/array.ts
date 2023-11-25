@@ -1,4 +1,4 @@
-// Array: it is defind as a group of a elements(ex:group of numbers,strings,data types,)
+// Array: it is defind as a group of a elements(ex:group of numbers,strings,data types)
 
 const car: any[] = [{ seatCount: 12, ventilaters_seats: 2 }, "stering", 1, ["piston", { storks: 4 }]];
 
@@ -26,7 +26,7 @@ console.log("step4", bike[3]);
 
 const carModels: string[] = ["SUV", "sport", "hackbag"];
 
-carModels.push("sedan")
+carModels.push("sedan","covertable")
 
 console.log(carModels);
 

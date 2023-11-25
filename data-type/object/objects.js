@@ -1,27 +1,32 @@
-// /*object: object is a collection of properties, 
-// and a property is an association between a name (or key) and a value.*/
-var _a;
-var book = {
-    no_of_pages: 200,
-    chapters: 10,
-    subject: "english",
-    author: "manu"
-};
-function bookInfo(book) {
-    // console.log();
-}
-bookInfo(book);
-book.no_of_pages = 12;
-book.chapters = 12;
-function object(objejData) {
-    var innerFunctionObject = objejData;
-    return innerFunctionObject;
-}
-var obj = {
-    objKey: 1,
-    objKey_2: 2
-};
-object(obj);
+// // /*object: object is a collection of properties, 
+// // and a property is an association between a name (or key) and a value.*/
+// // // Interface: It is given to mension the type of object keys 
+// interface bookType {
+//     readonly no_of_pages: number;
+//     chapters: number;
+//     subject: string;
+//     author?: string; // Optional is one type of option if is there data is taken and its not dummy
+// }
+// let book = {
+//     no_of_pages: 200,
+//     chapters: 10,
+//     subject: "english",
+//     author: "manu"
+// }
+// function bookInfo(book: bookType) {
+//     console.log();
+// }
+// bookInfo(book);
+// book.no_of_pages = 12;
+// book.chapters = 12;
+// interface objectType {
+//     objKey: number;
+//     objKey_2: number;
+// }
+// function object(objejData: objectType): objectType { //Here retun object is wrote at before block at index line
+//     const innerFunctionObject: objectType = objejData;
+//     return innerFunctionObject;
+// }
 // const basket = {
 //     hooks: 10,
 //     color: "red",
@@ -37,9 +42,10 @@ object(obj);
 // console.log(typeof basket.color);
 // console.log(typeof basket.sub_basket);
 // console.log(typeof basket.things);
-var prop = "ffoo";
-var obj = (_a = {},
-    _a[prop] = 123,
-    _a.prop = 456,
-    _a);
-console.log(obj.ffoo, obj.prop);
+// const prop = "ffoo";
+// let obj = {
+//     [prop]: 123,
+//     prop: 456
+// }
+// console.log(obj.ffoo, obj.prop);
+console.log([] == ![]);

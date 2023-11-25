@@ -8,5 +8,5 @@ switch (weekNumber) {
     case 6: console.log("friday"); break;
     case 7: console.log("saturday"); break;
     default: console.log("Invalid week number "); break;
-}
+};
 

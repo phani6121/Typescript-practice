@@ -32,3 +32,28 @@ const cornar1 = seat.cornar
 console.log(window1);
 console.log(middle1);
 console.log(cornar1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+enum num  {
+    num,
+    nums2   
+}
+
+
