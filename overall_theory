@@ -1,580 +1,582 @@
-TYPESCRIPT:-
-Key Types:
-1.let
-2.var
-3.const
-Keys are indicate state of Variable 
-
-Data Types: 
-1.Number
-2.String
-3.Boolean etc.
-Number: Given value of variable like 20,22,25 those are number data type.
-Sintax: let,var or const variable: number = value
-
-String: Given value of variable like phani,siva,sri those are string data type and 
-string are wrote like"phani".
-Sintax:let,var or const variable:string = "value"
-
-Boolean: Given value of variable like true or false is called boolean data type.
-Syntax:const variable: boolean = value
-
-Number Methods:
-1.PerseInt
-2.PerseFloat
-3.ToFixed
-
-PerseInt: In this method the value of veriable to modified like 200.23567+20 to 220 and
-in those situation values are wrote string type like"200.23567".
-call like [console.log(Number.parseInt(num) +20);]
-
-PerseFloat: In this method the value of variable to modified like 200.23567+20=220.23567 and
-in those situation values are wrote string type like"200.23567".
-call like [console.log(Number.parseFloat(num) +20);]
-
-ToFixed: In this method the value of variable to modified like 200.23567+20=220.24 and
-in those situation values are wrote string type like"200.23567".
-call like [console.log(Number.parseFloat(toFixedValue) +20);]
-
-String Methods:
-1.CharAt
-2.Concat
-3.Replace
-4.Split
-5.Substring
-6.Uppercase
-7.Lowercare
-
-CharAt: In this method the value of variable given particular latter from the value.
-call like [console.log(mystring. charAt(1));]
-
-Concat: In this method two or more sintax of values add to one statement.
-call like [console.log(str1.concat(str2). concat(str3));]
-
-Replace: In this method the value of variable to replace the value.
-call like [console.log(str.replace('x', 'y'));]
-
-Split: In this method value of veriable to split the given condition. 
-call like[console.log(names.split(" "));] Full value output
-         [console.log(names.split(" ", 2));] two words output
-        [console.log(names.split(" ", 1));] one word output
-
-Substring: In this method the value of variable to generate the an other value fron the main value.
-call like [console.log(str.substring(0, 3));]
-
-Uppercase: In this method the value of variable to change the small latters to capital latters
-call like [console.log(str.toUpperCase( ));]
-
-Lowercase: In this method the value of variable to change the capital latters to small latters
-call like [console.log(str.toLocaleLowerCase( ));]
-
-Function: It is used to create any logic in function that logic to use many times at need that function.
-sintax: function functionName (Perameters){
-    function body or Block
-}
-
-Function with return: It is used to function result need to use some where in that time to call the return 
-function either before that function or after that function.
-sintax: function functionName1 (Parameters){
-    function body;
-    output-functionName2;
-};
-
-function functionName2 (Parameters){
-    function body;
-    return result;
-};
-
-Objects: Objects is collection of properties in properties there is kays and values.
-sintax:let,var or const objectName = {
-    key1:value1,
-    key2:value2
-};
-
-Interface: Interface is mension the type for object keys.
-sintax: interface objectType{
-    kay1:number,
-    key2:string,
-    key3:boolean
-};
-
-Optional: Optional is a type of option if object particular key have value is there taken 
-not have value code will run act like a dummy and optional is indicated "?"
-sintax: sintax: interface objectType{
-    kay1:number,
-    key2:string,
-    key3?:boolean
-}; 
-let,var or const objectName = {
-    key1:value1,
-    key2:value2,
-    key3:value3
-};
-
-ReadOnly: ReadOnly is the assign kays values not allow to change.
-sintax: sintax: interface objectType{
-readOnly kay1:number,
-    key2:string,
-    key3?:boolean
-}; 
-let,var or const objectName = {
-    key1:value1,
-    key2:value2,
-    key3:value3
-};
-
-Object Methods:
-1.Assign
-2.Entries
-3.hasOwn
-4.is
-5.seal
-6.sealed
-7.keys
-8.values
-
-Assign: In this method one or more objects are there in that time if we call first object it will
-add remining objects
-If we call second or third object output is only that object keys and values
-Example:
-const car = {
-    pistons: 4,
-    cylinders: 4,
-    insideObject: {
-        "model": 2021
-    }
-};
-const bike = { wheels: 2, strokes: 4 };
-const auto = { wheels: 3, passengers: 8 }
-const result = Object.assign(car, bike, auto);
-car.insideObject.model = 2022
-console.log(bike);
-console.log(car);
-console.log(auto);
-
-Entries: In this method output is formed array of the kays and values and
-if kays are numbers so output is formed in Ascending order.
-example:
-const school1 = { 500: "a", 300: "b" };
-console.log(Object.entries(school1));
-
-hasOwn:In this method when we are call object paticular key if that key is in object output given true not there output false.
-example:
-const car1 = {
-    wheels: 4,
-    steering: 1,
-    driver: 1
-};
-console.log(Object.hasOwn(car1, "wheels"));
-console.log(Object.hasOwn(car1, "tyres"));
-
-Is: In this method object keys values are same output is true, values are different output false.
-example: console.log(Object.is(1, -1));
-
-Seal: In this method object keys are not possiable to change ,delete and add once seal,
-Its possiable to change the values.
-example:
-interface animalsType {
-    dog?: number,
-    duck: number,
-    picock: number
-};
-
-const animals: animalsType = {
-    dog: 3,
-    duck: 5,
-    picock: 2
-};
-Object.seal(animals);
-animals.duck = 1;
-console.log(animals);
-delete animals.dog;
-console.log(animals);
-
-Sealed: In this method object is sealed output true ,not sealed output false.
-example:
-const viscocity = {
-    property: 42,
-  };
-  console.log(Object.isSealed(viscocity));
-  Object.seal(viscocity);
-  console.log(Object.isSealed(viscocity));
-
-Keys: In this method object of keys formed array in output,keys formed in order.
-example:
-const anObj = { 300: "silver", 200: "gold", 500: "platinum" };
-console.log(Object.keys(anObj));
-
-Values: In this method object values are formed in array, values are not formed order.
-example:
-const jeep = {
-    model: "compass",
-    cc: 2000,
-    yearOfModel: 2022
-};
-console.log(Object.values(jeep));
-
-Array: It is defind as a group of a elements(ex:group of numbers,strings,data types).
-array is defind '[]' this symble.
-sintax: const variable: dataType [] = [{element1 ,element2} ,[element3 ]];
-console.log("index 2", car[2 ]); this line is call the particular element.
-
-Array methods:
-1.forEach
-2.at 
-3.concat
-4.map
-5.sort
-5.slice
-6.push
-7.pop
-8.unshift
-9.shift
-
-forEach: In this method used to iteraction of the array.
-sintax:
-array.forEach(element => {   
- });
-It means add the elemets to array.
-And edit the array inside objects,add new keys and value and change the keys also.
-And delete the particular elemtnt also.
-And in this method has by defolt two variables is there.
-first veriable is mention to object.
-And second veriable mention to index value.
-
-example:
-interface bikeType {
-    model: string,
-    cc?: number
-    brand?: string
-}
-
-
-let bike1: bikeType[] = [
-    {
-        model: "shine",
-        cc: 125,
-        brand: "honda"
-    },
-    {
-        model: "activa",
-        cc: 110,
-        brand: "honda"
-    },
-    {
-        model: "dream",
-        cc: 121,
-        brand: "honda"
-    }
-
-]
-let count1: number = 0;
-bike1.forEach((companyName, indexValue) => {// this is count of the arry elements 
-    count1 += 1
-    console.log(count1);
-
-    if (companyName.model == "shine") {// this is change value of key
-        companyName.cc = 135
-    }
-    companyName["number of pistons"] = 1;//this is add key in object
-    delete companyName.brand; // delete key of the object in that time key must be optional
-
-    if (companyName.model == "activa") {// this is add key paticular object
-        companyName["speed"] = 180
-
-    }
-    if (companyName.model == "activa") {
-        companyName["cubic centemeter"] = companyName["cc"]//this is replace key particular object
-        delete companyName.cc
-    }
-})
-console.log(bike1);
-
-At: In this method we can find the Index value from the array by call the index values.
-And positive index values are count to 0,1,2,3,4 also count LH to RH.
-And negitive index values are count to -1,-2,-3,-4 also count RH to LH.
-example:
-var array1 = [5, 12, 8, 130, 44];
-console.log(array1.at(3));
-
-concat: In this method we are join the two arrays.
-example:
-const latters1: string[] = ['a', 'b', 'c'];
-const latters2: string[] = ['d', 'e', 'f'];
-const latters3 = latters1.concat(latters2);
-console.log(latters3);
-
-Map: In this method we can modified array and it formed a new array.
-example: 
-let numbers = [2, 4, 6, 8, 10];
-function square(number) {
-    return number * number;
-}
-let square_numbers = numbers.map(square);
-console.log(square_numbers);
-
-Sort: In this method we can create a order to given array.
-And elements are in latters it create a order like A,B,C,D,E.
-And elements are in numbers it create a order like 1,100,21,30,4 at here 100 is bigger then after numbers
-but it consider only first number.
-And if in array both latters and numbers are there in that time first formed numbers after formed latters 
-based on order.
-example:
-const months = ['March', 'Jan', 'Feb', 'Dec'];
-months.sort();
-console.log(months);
-
-Slice: In this method create a new array based on given index values.
-example:
-const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-console.log(animals.slice(2));
-console.log(animals.slice(2, 4));
-console.log(animals.slice(1, 5));
-console.log(animals.slice(-2));
-
-Push: In this method add the one element at last of the array.
-example:
-const carModels: string[] = ["SUV", "sport", "hackbag"];
-carModels.push("sedan")
-console.log(carModels);
-
-Pop: In this method remove the one element at last of the array.
-example:
-let bike1: any[] = ["bajaj", "hero", "honda", "tvs"]
-bike1.pop()
-console.log(bike1);
-
-Unshift: In this method add the one element at starting of the array.
-example:
-let bike3: any[] = ["bajaj", "hero", "honda", "tvs"]
-bike3.unshift("tvs")
-console.log(bike3);
-
-shift: In this method remove the one element at starting of the array.
-example:
-let bike2: any[] = ["bajaj", "hero", "honda", "tvs"]
-bike2.shift()
-console.log(bike2);
-
-Tuple: Tuples are the mension data type of the array elements.
-And must followed the main array length.
-And sequence of the array also must be followed.
-example:
-let use : [string, number, boolean];
-use = ["phani", 123, true];
-
-Union: Union type is the we are given values one time number and next time string for one variable In that 
-time we are used to union type.
-In that situation we given veriable value number or string its taken based on our need.
-example:
-let userName: number | string;
-userName = 2233
-console.log(userName);
-userName = "phanindra"
-console.log(userName);
-
-Enums: It is a constant of the veriable values and we create only numaric and strings.
-And in three keys are there so we are not given value its automatically takes 0,1,2 like that.
-And in three keys are there so we are given first key value 2 atomatically second value is 3 
-example:
-enum fruitPrice {
-    applePrice,  
-    bananaPrice
-}
-const fruitOne = fruitPrice.applePrice;
-const fruittwo = fruitPrice.bananaPrice;
-
-Primitive data types: Primitive types are called number,string and boolen etc (data types).
-In premitive type if we are change the value of numberor string or any data type only change that value only and paticular place only.
-
-NOn-Primitive data types: Non-Primitive data types are called objects,arrays and functions.
-In non premitive type if we are change the value of inside object, array and function 
-changed that value at all over object ,array and function at all objects,arrays and functions.
-
-Shallow copy: shallow copy is applyes no change of the premitive data types, changes of the non premitive data types.
-sintax:let anotherObject: Object = Object.assign({}, object);
-
-Deep clone: Deep clone is applyes create a new array ,object and function there is no changes,it means the refarance is canceled.
-sintax:let anotherObjectForDeepClone: Object = structuredClone(object);
-let anotherObjectForDeepClone: Object = JSON.parse(JSON.stringify(object));
-
-Control statements:
-
-Fetures:
-or || 
-and &&
-not ! 
-==--> It checks value on both sides
-===--> It checks dataType on both sides
-
-something/something will give you quotient
-something%something will give you reminder 
-% modular operator or modulus or persentage sign
-
-1.If
-2.Switch
-3.Ternary
-
-If: If, Else if and Else those three are control statements.
-In this statement to change the given input to output in feture.
-sintax:
-if (condition) {
-    block    
-};
-example1:
-let myNumber: number = 34
-if (myNumber > 35) {
-    console.log("pass");
-} else {
-    console.log("fail"); 
-};
-example2:
-let marks: number = 60
-if (marks <= 100 && marks >= 90) {
-    console.log("A");
-} else if (marks <= 89 && marks >= 80) {
-    console.log("B");
-} else if (marks <= 79 && marks >= 70) {
-    console.log("C");
-} else if (marks <= 69 && marks >= 60) {
-    console.log("D");
-} else if (marks < 60) {
-    console.log("F");
-} else if (marks > 100) {
-    console.log("INVALID MARKS");
-};
-
-Switch: switch case is the minimize the conditions and simplified.
-sintax:
-switch (key) {
-    case value:
+// TYPESCRIPT:-
+// Key Types:
+// 1.let
+// 2.var
+// 3.const
+// Keys are indicate state of Variable 
+
+// Data Types: 
+// 1.Number
+// 2.String
+// 3.Boolean etc.
+// Number: Given value of variable like 20,22,25 those are number data type.
+// Sintax: let,var or const variable: number = value
+
+// String: Given value of variable like phani,siva,sri those are string data type and 
+// string are wrote like"phani".
+// Sintax:let,var or const variable:string = "value"
+
+// Boolean: Given value of variable like true or false is called boolean data type.
+// Syntax:const variable: boolean = value
+
+// Number Methods:
+// 1.PerseInt
+// 2.PerseFloat
+// 3.ToFixed
+
+// PerseInt: In this method the value of veriable to modified like 200.23567+20 to 220 and
+// in those situation values are wrote string type like"200.23567".
+// call like [console.log(Number.parseInt(num) +20);]
+
+// PerseFloat: In this method the value of variable to modified like 200.23567+20=220.23567 and
+// in those situation values are wrote string type like"200.23567".
+// call like [console.log(Number.parseFloat(num) +20);]
+
+// ToFixed: In this method the value of variable to modified like 200.23567+20=220.24 and
+// in those situation values are wrote string type like"200.23567".
+// call like [console.log(Number.parseFloat(toFixedValue) +20);]
+
+// String Methods:
+// 1.CharAt
+// 2.Concat
+// 3.Replace
+// 4.Split
+// 5.Substring
+// 6.Uppercase
+// 7.Lowercare
+
+// CharAt: In this method the value of variable given particular latter from the value.
+// call like [console.log(mystring. charAt(1));]
+
+// Concat: In this method two or more sintax of values add to one statement.
+// call like [console.log(str1.concat(str2). concat(str3));]
+
+// Replace: In this method the value of variable to replace the value.
+// call like [console.log(str.replace('x', 'y'));]
+
+// Split: In this method value of veriable to split the given condition. 
+// call like[console.log(names.split(" "));] Full value output
+//          [console.log(names.split(" ", 2));] two words output
+//         [console.log(names.split(" ", 1));] one word output
+
+// Substring: In this method the value of variable to generate the an other value fron the main value.
+// call like [console.log(str.substring(0, 3));]
+
+// Uppercase: In this method the value of variable to change the small latters to capital latters
+// call like [console.log(str.toUpperCase( ));]
+
+// Lowercase: In this method the value of variable to change the capital latters to small latters
+// call like [console.log(str.toLocaleLowerCase( ));]
+
+// Function: It is used to create any logic in function that logic to use many times at need that function.
+// sintax: function functionName (Perameters){
+//     function body or Block
+// }
+
+// Function with return: It is used to function result need to use some where in that time to call the return 
+// function either before that function or after that function.
+// sintax: function functionName1 (Parameters){
+//     function body;
+//     output-functionName2;
+// };
+
+// function functionName2 (Parameters){
+//     function body;
+//     return result;
+// };
+
+// Objects: Objects is collection of properties in properties there is kays and values.
+// sintax:let,var or const objectName = {
+//     key1:value1,
+//     key2:value2
+// };
+
+// Interface: Interface is mension the type for object keys.
+// sintax: interface objectType{
+//     kay1:number,
+//     key2:string,
+//     key3:boolean
+// };
+
+// Optional: Optional is a type of option if object particular key have value is there taken 
+// not have value code will run act like a dummy and optional is indicated "?"
+// sintax: sintax: interface objectType{
+//     kay1:number,
+//     key2:string,
+//     key3?:boolean
+// }; 
+// let,var or const objectName = {
+//     key1:value1,
+//     key2:value2,
+//     key3:value3
+// };
+
+// ReadOnly: ReadOnly is the assign kays values not allow to change.
+// sintax: sintax: interface objectType{
+// readOnly kay1:number,
+//     key2:string,
+//     key3?:boolean
+// }; 
+// let,var or const objectName = {
+//     key1:value1,
+//     key2:value2,
+//     key3:value3
+// };
+
+// Object Methods:
+// 1.Assign
+// 2.Entries
+// 3.hasOwn
+// 4.is
+// 5.seal
+// 6.sealed
+// 7.keys
+// 8.values
+
+// Assign: In this method one or more objects are there in that time if we call first object it will
+// add remining objects
+// If we call second or third object output is only that object keys and values
+// Example:
+// const car = {
+//     pistons: 4,
+//     cylinders: 4,
+//     insideObject: {
+//         "model": 2021
+//     }
+// };
+// const bike = { wheels: 2, strokes: 4 };
+// const auto = { wheels: 3, passengers: 8 }
+// const result = Object.assign(car, bike, auto);
+// car.insideObject.model = 2022
+// console.log(bike);
+// console.log(car);
+// console.log(auto);
+
+// Entries: In this method output is formed array of the kays and values and
+// if kays are numbers so output is formed in Ascending order.
+// example:
+// const school1 = { 500: "a", 300: "b" };
+// console.log(Object.entries(school1));
+
+// hasOwn:In this method when we are call object paticular key if that key is in object output given true not there output false.
+// example:
+// const car1 = {
+//     wheels: 4,
+//     steering: 1,
+//     driver: 1
+// };
+// console.log(Object.hasOwn(car1, "wheels"));
+// console.log(Object.hasOwn(car1, "tyres"));
+
+// Is: In this method object keys values are same output is true, values are different output false.
+// example: console.log(Object.is(1, -1));
+
+// Seal: In this method object keys are not possiable to change ,delete and add once seal,
+// Its possiable to change the values.
+// example:
+// interface animalsType {
+//     dog?: number,
+//     duck: number,
+//     picock: number
+// };
+
+// const animals: animalsType = {
+//     dog: 3,
+//     duck: 5,
+//     picock: 2
+// };
+// Object.seal(animals);
+// animals.duck = 1;
+// console.log(animals);
+// delete animals.dog;
+// console.log(animals);
+
+// Sealed: In this method object is sealed output true ,not sealed output false.
+// example:
+// const viscocity = {
+//     property: 42,
+//   };
+//   console.log(Object.isSealed(viscocity));
+//   Object.seal(viscocity);
+//   console.log(Object.isSealed(viscocity));
+
+// Keys: In this method object of keys formed array in output,keys formed in order.
+// example:
+// const anObj = { 300: "silver", 200: "gold", 500: "platinum" };
+// console.log(Object.keys(anObj));
+
+// Values: In this method object values are formed in array, values are not formed order.
+// example:
+// const jeep = {
+//     model: "compass",
+//     cc: 2000,
+//     yearOfModel: 2022
+// };
+// console.log(Object.values(jeep));
+
+// Array: It is defind as a group of a elements(ex:group of numbers,strings,data types).
+// array is defind '[]' this symble.
+// sintax: const variable: dataType [] = [{element1 ,element2} ,[element3 ]];
+// console.log("index 2", car[2 ]); this line is call the particular element.
+
+// Array methods:
+// 1.forEach
+// 2.at 
+// 3.concat
+// 4.map
+// 5.sort
+// 5.slice
+// 6.push
+// 7.pop
+// 8.unshift
+// 9.shift
+
+// forEach: In this method used to iteraction of the array.
+// sintax:
+// array.forEach(element => {   
+//  });
+// It means add the elemets to array.
+// And edit the array inside objects,add new keys and value and change the keys also.
+// And delete the particular elemtnt also.
+// And in this method has by defolt two variables is there.
+// first veriable is mention to object.
+// And second veriable mention to index value.
+
+// example:
+// interface bikeType {
+//     model: string,
+//     cc?: number
+//     brand?: string
+// }
+
+
+// let bike1: bikeType[] = [
+//     {
+//         model: "shine",
+//         cc: 125,
+//         brand: "honda"
+//     },
+//     {
+//         model: "activa",
+//         cc: 110,
+//         brand: "honda"
+//     },
+//     {
+//         model: "dream",
+//         cc: 121,
+//         brand: "honda"
+//     }
+
+// ]
+// let count1: number = 0;
+// bike1.forEach((companyName, indexValue) => {// this is count of the arry elements 
+//     count1 += 1
+//     console.log(count1);
+
+//     if (companyName.model == "shine") {// this is change value of key
+//         companyName.cc = 135
+//     }
+//     companyName["number of pistons"] = 1;//this is add key in object
+//     delete companyName.brand; // delete key of the object in that time key must be optional
+
+//     if (companyName.model == "activa") {// this is add key paticular object
+//         companyName["speed"] = 180
+
+//     }
+//     if (companyName.model == "activa") {
+//         companyName["cubic centemeter"] = companyName["cc"]//this is replace key particular object
+//         delete companyName.cc
+//     }
+// })
+// console.log(bike1);
+
+// At: In this method we can find the Index value from the array by call the index values.
+// And positive index values are count to 0,1,2,3,4 also count LH to RH.
+// And negitive index values are count to -1,-2,-3,-4 also count RH to LH.
+// example:
+// var array1 = [5, 12, 8, 130, 44];
+// console.log(array1.at(3));
+
+// concat: In this method we are join the two arrays.
+// example:
+// const latters1: string[] = ['a', 'b', 'c'];
+// const latters2: string[] = ['d', 'e', 'f'];
+// const latters3 = latters1.concat(latters2);
+// console.log(latters3);
+
+// Map: In this method we can modified array and it formed a new array.
+// example: 
+// let numbers = [2, 4, 6, 8, 10];
+// function square(number) {
+//     return number * number;
+// }
+// let square_numbers = numbers.map(square);
+// console.log(square_numbers);
+
+// Sort: In this method we can create a order to given array.
+// And elements are in latters it create a order like A,B,C,D,E.
+// And elements are in numbers it create a order like 1,100,21,30,4 at here 100 is bigger then after numbers
+// but it consider only first number.
+// And if in array both latters and numbers are there in that time first formed numbers after formed latters 
+// based on order.
+// example:
+// const months = ['March', 'Jan', 'Feb', 'Dec'];
+// months.sort();
+// console.log(months);
+
+// Slice: In this method create a new array based on given index values.
+// example:
+// const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+// console.log(animals.slice(2));
+// console.log(animals.slice(2, 4));
+// console.log(animals.slice(1, 5));
+// console.log(animals.slice(-2));
+
+// Push: In this method add the one element at last of the array.
+// example:
+// const carModels: string[] = ["SUV", "sport", "hackbag"];
+// carModels.push("sedan")
+// console.log(carModels);
+
+// Pop: In this method remove the one element at last of the array.
+// example:
+// let bike1: any[] = ["bajaj", "hero", "honda", "tvs"]
+// bike1.pop()
+// console.log(bike1);
+
+// Unshift: In this method add the one element at starting of the array.
+// example:
+// let bike3: any[] = ["bajaj", "hero", "honda", "tvs"]
+// bike3.unshift("tvs")
+// console.log(bike3);
+
+// shift: In this method remove the one element at starting of the array.
+// example:
+// let bike2: any[] = ["bajaj", "hero", "honda", "tvs"]
+// bike2.shift()
+// console.log(bike2);
+
+// Tuple: Tuples are the mension data type of the array elements.
+// And must followed the main array length.
+// And sequence of the array also must be followed.
+// example:
+// let use : [string, number, boolean];
+// use = ["phani", 123, true];
+
+// Union: Union type is the we are given values one time number and next time string for one variable In that 
+// time we are used to union type.
+// In that situation we given veriable value number or string its taken based on our need.
+// example:
+// let userName: number | string;
+// userName = 2233
+// console.log(userName);
+// userName = "phanindra"
+// console.log(userName);
+
+// Enums: It is a constant of the veriable values and we create only numaric and strings.
+// And in three keys are there so we are not given value its automatically takes 0,1,2 like that.
+// And in three keys are there so we are given first key value 2 atomatically second value is 3 
+// example:
+// enum fruitPrice {
+//     applePrice,  
+//     bananaPrice
+// }
+// const fruitOne = fruitPrice.applePrice;
+// const fruittwo = fruitPrice.bananaPrice;
+
+// Primitive data types: Primitive types are called number,string and boolen etc (data types).
+// In premitive type if we are change the value of numberor string or any data type only change that value only and paticular place only.
+
+// NOn-Primitive data types: Non-Primitive data types are called objects,arrays and functions.
+// In non premitive type if we are change the value of inside object, array and function 
+// changed that value at all over object ,array and function at all objects,arrays and functions.
+
+// Shallow copy: shallow copy is applyes no change of the premitive data types, changes of the non premitive data types.
+// sintax:let anotherObject: Object = Object.assign({}, object);
+
+// Deep clone: Deep clone is applyes create a new array ,object and function there is no changes,it means the refarance is canceled.
+// sintax:let anotherObjectForDeepClone: Object = structuredClone(object);
+// let anotherObjectForDeepClone: Object = JSON.parse(JSON.stringify(object));
+
+// Control statements:
+
+// Fetures:
+// or || 
+// and &&
+// not ! 
+// ==--> It checks value on both sides
+// ===--> It checks dataType on both sides
+
+// something/something will give you quotient
+// something%something will give you reminder 
+// % modular operator or modulus or persentage sign
+
+// 1.If
+// 2.Switch
+// 3.Ternary
+
+// If: If, Else if and Else those three are control statements.
+// In this statement to change the given input to output in feture.
+// sintax:
+// if (condition) {
+//     block    
+// };
+// example1:
+// let myNumber: number = 34
+// if (myNumber > 35) {
+//     console.log("pass");
+// } else {
+//     console.log("fail"); 
+// };
+// example2:
+// let marks: number = 60
+// if (marks <= 100 && marks >= 90) {
+//     console.log("A");
+// } else if (marks <= 89 && marks >= 80) {
+//     console.log("B");
+// } else if (marks <= 79 && marks >= 70) {
+//     console.log("C");
+// } else if (marks <= 69 && marks >= 60) {
+//     console.log("D");
+// } else if (marks < 60) {
+//     console.log("F");
+// } else if (marks > 100) {
+//     console.log("INVALID MARKS");
+// };
+
+// Switch: switch case is the minimize the conditions and simplified.
+// sintax:
+// switch (key) {
+//     case value:
         
-        break;
+//         break;
 
-    default:
-        break;
-};
-Key means nothing but veriable.
-In switch statement we are wrote number of cases.
-Brake is nothing but if condition is true.
-Default mean exit to our condition values becomes output given whatever we are given data.
-example:
-let weekNumber: number = 3 // switch case is the minimize the conditions and simplified 
-switch (weekNumber) {
-    case 1: console.log("sunday"); break;
-    case 2: console.log("monday"); break;
-    case 3: console.log("tuesday"); break;
-    case 4: console.log("wednesday"); break;
-    case 5: console.log("thurday"); break;
-    case 6: console.log("friday"); break;
-    case 7: console.log("saturday"); break;
-    default: console.log("Invalid week number "); break;
-};
+//     default:
+//         break;
+// };
+// Key means nothing but veriable.
+// In switch statement we are wrote number of cases.
+// Brake is nothing but if condition is true.
+// Default mean exit to our condition values becomes output given whatever we are given data.
+// example:
+// let weekNumber: number = 3 // switch case is the minimize the conditions and simplified 
+// switch (weekNumber) {
+//     case 1: console.log("sunday"); break;
+//     case 2: console.log("monday"); break;
+//     case 3: console.log("tuesday"); break;
+//     case 4: console.log("wednesday"); break;
+//     case 5: console.log("thurday"); break;
+//     case 6: console.log("friday"); break;
+//     case 7: console.log("saturday"); break;
+//     default: console.log("Invalid week number "); break;
+// };
 
-Ternary: Ternary operator is to check the first statement and after check the second statement by through the conditon if first statement flase goes to second statement.
-example:
-var x: number = 600
-var y: number = 300
-x > y ? console.log("x is largest") : console.log("y is largest");
+// Ternary: Ternary operator is to check the first statement and after check the second statement by through the conditon if first statement flase goes to second statement.
+// example:
+// var x: number = 600
+// var y: number = 300
+// x > y ? console.log("x is largest") : console.log("y is largest");
 
-Increment operator:
-1.pre increment(++mynumber) In this condition value of variable incresed by 1 instant.
-2.post increment(mynumber++) In this condition value of variable incresed by 1 after complition of cycle
-decrement operator.
+// Increment operator:
+// 1.pre increment(++mynumber) In this condition value of variable incresed by 1 instant.
+// 2.post increment(mynumber++) In this condition value of variable incresed by 1 after complition of cycle
+// decrement operator.
 
-Decrement operator:
-1.pre decrement (--mynumber)In this condition value of variable decresed by 1 instant.
-2.post decrement(mynumber--)In this condition value of variable decresed by 1 after complition of cycle.
-example:
-let myNumber: number = 10
-let sum = --myNumber - myNumber++ + ++myNumber + myNumber++ - --myNumber + myNumber++ + ++myNumber + --myNumber + myNumber--
-console.log(sum);
+// Decrement operator:
+// 1.pre decrement (--mynumber)In this condition value of variable decresed by 1 instant.
+// 2.post decrement(mynumber--)In this condition value of variable decresed by 1 after complition of cycle.
+// example:
+// let myNumber: number = 10
+// let sum = --myNumber - myNumber++ + ++myNumber + myNumber++ - --myNumber + myNumber++ + ++myNumber + --myNumber + myNumber--
+// console.log(sum);
 
-Loops: Loops are used to track number of veriables and do changes by given conditions.
-In loops there are three working going on it is instalization,condition,incrementation
+// Loops: Loops are used to track number of veriables and do changes by given conditions.
+// In loops there are three working going on it is instalization,condition,incrementation
 
-Types:
-1.Do while
-2.For
-3.while
+// Types:
+// 1.Do while
+// 2.For
+// 3.while
 
-Do while: In do while loop process is first instalization after incrementation after condition 
-sintax:
-do {
-   block 
-} while (condition);
-example:
-let initialvalue: number = 0
-do {
-    console.log(initialvalue);
-    initialvalue += 1;
-} while (initialvalue <= 10);
+// Do while: In do while loop process is first instalization after incrementation after condition 
+// sintax:
+// do {
+//    block 
+// } while (condition);
+// example:
+// let initialvalue: number = 0
+// do {
+//     console.log(initialvalue);
+//     initialvalue += 1;
+// } while (initialvalue <= 10);
 
-For: In for loop process is instalization,condition,incrementation in one line.
-sintax:
-for (let index = 0; index < array.length; index++) {
-    const element = array[index ];    
-};
-example:
-for (let i = 1; i <= 10; i++) { 
-    console.log("hello" + i);
-    console.log(`hello ${i}`); //string litlers 
-};
+// For: In for loop process is instalization,condition,incrementation in one line.
+// sintax:
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index ];    
+// };
+// example:
+// for (let i = 1; i <= 10; i++) { 
+//     console.log("hello" + i);
+//     console.log(`hello ${i}`); //string litlers 
+// };
 
-While: while loop same like for loop difference is instalization,condition,incrementation different lines
-sintax:
-while (condition) {
-   block 
-};
-example:
-let milk: number = 1;
-let milkValue: number = 15;
-while (milk <= 30) {
-    console.log(milk);
-    console.log((`day-->${milk}`));
-    milk += 1;//increment of initialvalue
-};
+// While: while loop same like for loop difference is instalization,condition,incrementation different lines
+// sintax:
+// while (condition) {
+//    block 
+// };
+// example:
+// let milk: number = 1;
+// let milkValue: number = 15;
+// while (milk <= 30) {
+//     console.log(milk);
+//     console.log((`day-->${milk}`));
+//     milk += 1;//increment of initialvalue
+// };
 
-Classes: collection of objects
-construtor is used to setup object, this behaves as methods or function acces specifies(Public,Private,Protected).
-Public: It allows us to use the variable throught the class and outside class also.
-Private: We can not acesses the variable outside the object.
-protected: we use the variable in class only.
-sintax:
-class name {
-    constructor(parameters) {
+// Classes: collection of objects
+// construtor is used to setup object, this behaves as methods or function acces specifies(Public,Private,Protected).
+// Public: It allows us to use the variable throught the class and outside class also.
+// Private: We can not acesses the variable outside the object.
+// protected: we use the variable in class only.
+// sintax:
+// class name {
+//     constructor(parameters) {
         
-    }
-};
-example:
-class Polygon {
-  constructor() {
-    this.name = 'Polygon';
-  }
-};
-const poly1 = new Polygon();
+//     }
+// };
+// example:
+// class Polygon {
+//   constructor() {
+//     this.name = 'Polygon';
+//   }
+// };
+// const poly1 = new Polygon();
 
-console.log(poly1.name);
+// console.log(poly1.name);
 
-Arrow function: In arrow function have default return.
-example:
-const materials = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium'];
-console.log(materials.map((material) => material.length));
+// Arrow function: In arrow function wrote single default return. 
+// example:
+// const materials = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium'];
+// console.log(materials.map((material) => material.length));
 
-True values:
-Numbers ==> -1 to -ve infinity and 1 to +ve infinity.
-String ==> If array length is gretherthen 0 it considerd as true, or [].
-Object ==> If object kay length is greterthen 0 it consider as true or {}.
-Boolean ==> true.
+// True values:
+// Numbers ==> -1 to -ve infinity and 1 to +ve infinity.
+// String ==> If array length is gretherthen 0 it considerd as true, or [].
+// Object ==> If object kay length is greterthen 0 it consider as true or {}.
+// Boolean ==> true.
 
-falsy values:
-Numbers ==> 0.
-String ==> If there is no text in string that is false ex: "" or ''.
-Array ==> If array length is equai to 0 it considerd as false , or [].length ==0.
-Object ==> If object key length is equal to 0 it considerd as false or object.keys ({}).length==0
-Boolean ==> False
-Undefind , null
+// falsy values:
+// Numbers ==> 0.
+// String ==> If there is no text in string that is false ex: "" or ''.
+// Array ==> If array length is equai to 0 it considerd as false , or [].length ==0.
+// Object ==> If object key length is equal to 0 it considerd as false or object.keys ({}).length==0
+// Boolean ==> False
+// Undefind , null
 
+//Defoult values: It means when ever we are create a function to given logic for that logic to given perameters
+//not given that perameters it takes defolt perameters that perameters also given to us. 
 
 
 
